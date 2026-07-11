@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Joke site</title>
+  <title>knock knock</title>
   <style>
     html,body{height:100%;margin:0}
     body{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#111;color:#fff;font-family:system-ui,Segoe UI,Roboto,Arial}
@@ -15,16 +15,13 @@
 </head>
 <body>
   <div class="container">
-    <!-- Replace or add the image file `tralalal_image.png` next to this HTML in the repo. -->
-    <img src="tralalal_image.png" alt="Joke image"/>
+    <img src="IMG-1958.png" alt="pizza is coming"/>
 
-    <!-- The site cannot reveal any internal or infrastructure IP for the assistant. Instead this shows the visitor's public IP (client IP) as a joke. -->
     <div id="ip" class="ip">IP: [fetching...]</div>
-    <div class="note">This shows the visitor's public IP (not the assistant's). If you really want a static joke text, change the content of the #ip element.</div>
   </div>
 
   <script>
-    // Fetch the visitor's public IP using a public service and show it in red.
+    // Fetch the visitor's public IP using a public service and show it in red
     // Note: this runs in the visitor's browser and returns their public IP address.
     document.addEventListener('DOMContentLoaded', async () => {
       const ipEl = document.getElementById('ip');
