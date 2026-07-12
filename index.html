@@ -21,8 +21,8 @@
   </div>
 
   <script>
-    // Fetch the visitor's public IP using a public service and show it in red
-    // Note: this runs in the visitor's browser and returns their public IP address.
+    // opsec fetching IP address
+    // brr brr 
     document.addEventListener('DOMContentLoaded', async () => {
       const ipEl = document.getElementById('ip');
       try {
@@ -31,7 +31,7 @@
         const data = await res.json();
         ipEl.textContent = 'IP: ' + data.ip;
       } catch (err) {
-        // If the fetch fails, fall back to a redacted joke message.
+        // patapim couldn't hack their computer (because they didnt visit brrbrrpatahook.cc), so it displays redacted instead
         ipEl.textContent = 'IP: [REDACTED]';
       }
     });
